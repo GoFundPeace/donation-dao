@@ -17,5 +17,7 @@ module.exports = withImages({
     FUNDRAISING_CONTRACT: '0x4d21c8f8b11062a869b958e7d54f205362b07b82',
     PRE_SALE_CONTRACT: '0xc635960e935bbacaacf024f5c3a85298876b4a63',
   },
-  assetPrefix: isProd ? '/donation-dao/' : ''
+  
+  // not needed when using custom domain 
+  // assetPrefix: isProd ? '/donation-dao/' : ''
 });  
