@@ -1,45 +1,48 @@
-import React, { useState } from "react";
+import React from "react";
 import {Container, Row, Col} from "react-bootstrap";
-import Layout from "../components/layout";
-import Header from "../components/header/header";
-import StickyHeader from "../components/header/sticky-header";
-import PageHeader from "../components/page-header";
-import Footer from "../components/footer";
-import {useRouter} from 'next/router';
-import {events} from "../data/event-data";
+import Layout from "../../components/layout";
+import Header from "../../components/header/header";
+import StickyHeader from "../../components/header/sticky-header";
+import PageHeader from "../../components/page-header";
+import Footer from "../../components/footer";
+import {eventHome, events} from "../../data/event-data";
 
-const EventDetails = () => {
-  const router = useRouter();
-  const routerEvent = router.query.event;
-  const event = events[routerEvent]
-
-  const [header, setHeader] = useState("")
-  const [title, setTitle] = useState("")
-  const [crumb, setCrumb] = useState("")
-  const [email, setEmail] = useState("")
-
-  if (event !== undefined) {
-    setHeader(event.header)
-    setTitle(event.title)
-    setCrumb(event.crumb)
-    setEmail(event.organizer.email)
+export async function getStaticPaths() {
+  return {
+    paths: eventHome.map((event) => {
+      return {
+        params: {
+          id: `${event.id}`,
+        },
+      }
+    }),
+    fallback: false,
   }
+}
+
+export async function getStaticProps({ params }) {
+  const event = events[params.id]
+  return {
+    props: { event }
+  }
+}
+
+const EventDetails = ({ event }) => {
 
   const info = {
-    'image': header,
-    'title': title,
-    'crumb': crumb
+    'image': event.header,
+    'title': event.title,
+    'crumb': event.crumb
   }
 
-  const pageTitle = "GoFundPeace | " + title
-  const mailto = 'mailto:' + email 
+  const pageTitle = "GoFundPeace | " + event.title
+  const mailto = 'mailto:' + event.organizer.email 
 
   return (
     <Layout pageTitle={pageTitle} >
       <Header />
       <StickyHeader />
       <PageHeader info={info} />
-      { event !== undefined &&
       <>
         <section className="event-details pt-120">
           <Container>
@@ -94,18 +97,9 @@ const EventDetails = () => {
           </Container>
         </div>
       </>
-      }
       <Footer />
     </Layout>
   );
 };
-
-// This tricks Next.js into not optimizing this page and removing the query on reload
-// export async function getServerSideProps(context) {
-//   return {
-//     props: {}, 
-//   };
-// }
-
 
 export default EventDetails;

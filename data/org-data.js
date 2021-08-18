@@ -67,36 +67,40 @@ import coombuvipacTestimonal3 from '../assets/images/organizations/coombuvipac/t
 
 export const orgsHome = [
   {
+    id: 'ascamcat',
     image: ascamcatImage4,
     logo: ascamcatLogo,
     title: 'The Catatumbo Farmers Association',
     shortenedTitle: 'AsCamCat',
     text: 'Working to reconstruct the social fabric to dignified living conditions and development for the people of Catatumbo',
-    link: '/org?org=ascamcat',
+    link: '/org/ascamcat',
   },
   {
+    id: 'asom',
     image: asomImage1,
     logo: asomLogo,
     title: 'Association of Afro-descendant Women of the North of Cauca',
     shortenedTitle: 'ASOM',
     text: 'Working to defend the rights of Afro-descendant women and communities in the North of Cauca',
-    link: '/org?org=asom',
+    link: '/org/asom',
   },
   {
+    id: 'asopep',
     image: asopepImage6,
     logo: asopepLogo,
     title: 'Association of Ecological Producers of Planadas',
     shortenedTitle: 'ASOPEP',
     text: 'Designing their own farm conservation model to guarantee resources for future generations.',
-    link: '/org?org=asopep',
+    link: '/org/asopep',
   },
   {
+    id: 'coombuvipac',
     image: coombuvipacImage14,
     logo: coombuvipacLogo,
     title: 'Universidad de la Sabana & COOMBUVIPAC',
     shortenedTitle: 'COOMBUVIPAC',
     text: 'Supporting peacebuilding by strengthening one of the roots of social inequality in rural areas in Colombia: education.',
-    link: '/org?org=coombuvipac',
+    link: '/org/coombuvipac',
   }
 ];
 

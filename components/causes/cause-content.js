@@ -1,20 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import GalleryPage from '../../components/gallery/gallery-page';
 import Video from '../../components/videos/video-card';
 import Testimonials from '../../components/testimonials/testimonials';
-import { useRouter } from 'next/router';
-import { orgs } from "../../data/org-data"
 
-const CauseContent = () => {
-  const router = useRouter();
-  const routerOrg = router.query.org;
-  const org = orgs[routerOrg];
-
-  if (org === undefined) {
-    return null
-  }
-
+const CauseContent = ({ org }) => {
   return (
     <section className='cause-details blog-details  pt-120 pb-40'>
       <Container>

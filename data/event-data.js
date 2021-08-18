@@ -7,13 +7,15 @@ import eventImage1 from "../assets/images/events/workshop/Picture1.jpg"
 
 export const eventHome = [
   {
+    id: "workshop",
     image: image1,
     title: "Workshop",
     date: "13 Aug",
     time: "9:00am 12:00pm GMT-5",
-    link: "/event?event=workshop"
+    link: "/event/workshop"
   },
   {
+    id: "",
     image: image2,
     title: "Start Fundraising",
     date: "20 Aug",
@@ -21,6 +23,7 @@ export const eventHome = [
     link: "/events"
   },
   {
+    id: "",
     image: image3,
     title: "Vote",
     date: "TBD",
@@ -28,6 +31,7 @@ export const eventHome = [
     link: "/events"
   },
   {
+    id: "",
     image: image4,
     title: "Report",
     date: "TBD",

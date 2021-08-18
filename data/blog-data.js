@@ -4,6 +4,7 @@ import blogImage3 from "../assets/images/blog/blog-1-3.jpg";
 
 export const blogData = [
   {
+    id: "donating",
     image: blogImage1,
     title: "Donating",
     text: "Learn how to donate",
@@ -13,6 +14,7 @@ export const blogData = [
     icon: "gfp-icon-charity",
   },
   {
+    id: "voting",
     image: blogImage2,
     title: "Voting",
     text: "Learn how to vote",
@@ -22,6 +24,7 @@ export const blogData = [
     icon: "gfp-icon-email1",
   },
   {
+    id: "hiw",
     image: blogImage3,
     title: "How It Works",
     text: "Learn about the project",
@@ -38,7 +41,7 @@ export const blogs = {
     crumb: "Donating"
   },
 
-  vote: {
+  voting: {
 
   },
 
