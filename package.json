@@ -1,0 +1,42 @@
+{
+  "homepage": "http://gofundpeace.github.io/donation-dao",
+  "name": "gofundpeace",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@ethersproject/bignumber": "^5.3.0",
+    "@ethersproject/contracts": "^5.3.0",
+    "@ethersproject/providers": "^5.3.1",
+    "@hookform/resolvers": "^2.7.1",
+    "@metamask/onboarding": "^1.0.0",
+    "@web3-react/core": "^6.1.9",
+    "@web3-react/injected-connector": "^6.0.7",
+    "@web3-react/network-connector": "^6.1.9",
+    "bootstrap": "^4.5.0",
+    "ethers": "^5.3.1",
+    "next": "^10.0.3",
+    "next-images": "^1.4.0",
+    "react": "^17.0.2",
+    "react-bootstrap": "^1.0.1",
+    "react-countup": "^4.3.3",
+    "react-dom": "^17.0.1",
+    "react-hook-form": "^7.12.2",
+    "react-modal-video": "^1.2.3",
+    "react-scroll": "^1.8.0",
+    "react-visibility-sensor": "^5.1.1",
+    "simple-react-lightbox": "^3.3.4-1",
+    "swiper": "^6.0.4",
+    "yup": "^0.32.9"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
