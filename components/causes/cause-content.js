@@ -11,6 +11,10 @@ const CauseContent = () => {
   const routerOrg = router.query.org;
   const org = orgs[routerOrg];
 
+  if (org === undefined) {
+    return null
+  }
+
   return (
     <section className='cause-details blog-details  pt-120 pb-40'>
       <Container>

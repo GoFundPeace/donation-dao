@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Layout from "../components/layout";
 import Header from "../components/header/header";
 import StickyHeader from "../components/header/sticky-header";
@@ -12,11 +12,22 @@ const Blog = () => {
   const router = useRouter();
   const routerBlog = router.query.blog;
   const blog = blogs[routerBlog]
-  const info = {
-    'title': blog.title,
-    'crumb': blog.crumb
+
+  const [header, setHeader] = useState("")
+  const [title, setTitle] = useState("")
+  const [crumb, setCrumb] = useState("")
+
+  if (blog !== undefined) {
+    setHeader(blog.header)
+    setTitle(blog.title)
+    setCrumb(blog.crumb)
   }
-  const pageTitle = "GoFundPeace | " + blog.title
+
+  const info = {
+    'title': title,
+    'crumb': crumb
+  }
+  const pageTitle = "GoFundPeace | " + title
   return (
     <Layout pageTitle={pageTitle}>
       <Header />
@@ -29,10 +40,10 @@ const Blog = () => {
 };
 
 // This tricks Next.js into not optimizing this page and removing the query on reload
-export async function getServerSideProps(context) {
-  return {
-    props: {}, 
-  };
-}
+// export async function getServerSideProps(context) {
+//   return {
+//     props: {}, 
+//   };
+// }
 
 export default Blog;
