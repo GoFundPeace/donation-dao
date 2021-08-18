@@ -14,30 +14,30 @@ export const eventHome = [
     time: "9:00am 12:00pm GMT-5",
     link: "/event/workshop"
   },
-  {
-    id: "",
-    image: image2,
-    title: "Start Fundraising",
-    date: "20 Aug",
-    time: "12:00pm GMT-5",
-    link: "/events"
-  },
-  {
-    id: "",
-    image: image3,
-    title: "Vote",
-    date: "TBD",
-    time: "12:00pm GMT-5",
-    link: "/events"
-  },
-  {
-    id: "",
-    image: image4,
-    title: "Report",
-    date: "TBD",
-    time: "12:00pm GMT-5",
-    link: "/events"
-  }
+  // {
+  //   id: "",
+  //   image: image2,
+  //   title: "Start Fundraising",
+  //   date: "20 Aug",
+  //   time: "12:00pm GMT-5",
+  //   link: ""
+  // },
+  // {
+  //   id: "",
+  //   image: image3,
+  //   title: "Vote",
+  //   date: "TBD",
+  //   time: "12:00pm GMT-5",
+  //   link: ""
+  // },
+  // {
+  //   id: "",
+  //   image: image4,
+  //   title: "Report",
+  //   date: "TBD",
+  //   time: "12:00pm GMT-5",
+  //   link: ""
+  // }
 ];
 
 export const events = {
