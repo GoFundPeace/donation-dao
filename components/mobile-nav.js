@@ -28,7 +28,7 @@ const MobileNav = () => {
         <ul className="mobile-nav__contact list-unstyled">
           <li>
             <i className="gfp-icon-email"></i>
-            <a href="mailto:contact@gofundpeace.org">contact@gofundpeace.org</a>
+            <a href="mailto:daniel@gofundpeace.org">daniel@gofundpeace.org</a>
           </li>
         </ul>
         {/* <div className="mobile-nav__top">

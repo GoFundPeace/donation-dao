@@ -70,14 +70,14 @@ export default function OnboardingButton(triedToEagerConnect) {
                 }
               })
             }} >
-            Connect to MetaMask
+            Connect to MetaMask to Donate
           </a>
         ) : (
           <a 
             className="thm-btn-2" disabled={false} onClick={() => {
               onboarding.current?.startOnboarding()
             }} >
-            Install MetaMask
+            Install MetaMask to Donate
           </a>
         )}
       </div>
