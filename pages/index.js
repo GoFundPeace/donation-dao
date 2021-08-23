@@ -18,7 +18,7 @@ const Home = () => {
       <AboutCounter />
       <ProgressBar />
       <Service />
-      <CausesHome />
+      {/* <CausesHome /> */}
       <Footer />
     </Layout>
   );

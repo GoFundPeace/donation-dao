@@ -36,11 +36,13 @@ const MainSlider = () => {
                 <Container>
                   <Row className='row justify-content-end'>
                     <Col xl={7} lg={12} className='text-right'>
-                      <p>Help sustain peace in Colombia</p>
-                      <p>by supporting {shortenedTitle}</p>
+                      {/* <p>Help sustain peace in Colombia</p> */}
+                      
                       <h2>
                         GoFundPeace
                       </h2>
+                      <p>by supporting</p>
+                      <h2 className='org'> {shortenedTitle}</h2>
                       <a
                         href={link}
                         data-target='.donate-options'

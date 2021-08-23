@@ -22,7 +22,7 @@ const Service = () => {
           {blogData.map(
             ({ icon, title, text, link, extraClassName }, index) => (
               <Col md={6} lg={4} key={`service-one-key-${index}`}>
-                <Link href={link}>
+                <a href={link} target='_blank'>
                 <div className={`service-one__box`}>
                   <div className={`service-one__icon ${extraClassName}`}>
                     <div className="service-one__icon-inner">
@@ -36,7 +36,7 @@ const Service = () => {
                   </h3>
                   <p>{text}</p>
                 </div>
-                </Link>
+                </a>
               </Col>
             )
           )}

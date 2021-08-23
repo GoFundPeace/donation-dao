@@ -6,7 +6,7 @@ module.exports = withImages({
     INFURA_PROJECT_ID: '922492ddbd61487c98b1c45aed5cfdc1',
     CHAIN_ID: '4',
     CHAIN_NAME: 'Rinkeby',
-    DENOMINTAION: 'DAI',
+    DENOMINATION: 'DAI',
 
     BLOCK_EXPLORER: 'https://rinkeby.etherscan.io/tx/',
 
